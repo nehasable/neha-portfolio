@@ -1,0 +1,58 @@
+.mask{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+.mask::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:#F9F5E7  ;
+    opacity: 0.8;
+}
+
+.header {
+    width: 100%;
+    height: 100%;
+}
+
+.header .content {                /* classes are separated by . but class and tag are separated by space */
+position: absolute;
+transform: translate(-50%, -50%);
+top: 50%;
+left: 50%;
+text-align: center;
+}
+
+.header .content h1{
+   font-size: 0.9rem;
+   padding: 0.6rem 0  1.6rem ;                 /* top right bottom*/
+}
+.header .content p{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.header .content .btn{
+    margin: 1rem 0.5rem;
+}
+
+@media screen and (max-width:640px) {
+    .header .content p{
+        font-size: 2.5rem;
+    }
+    .header .content h1{
+        font-size: 0.9rem;}
+        
+}
+

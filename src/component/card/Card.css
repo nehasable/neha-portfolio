@@ -1,0 +1,77 @@
+.skills{
+    width: 100%;
+    padding: 6rem 14rem;
+    background:#f9f5e7;
+}
+.card-container{
+    max-width: 1140px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 60px;
+    
+}
+.card{
+    width: 90%;
+    border: 1px solid #4C3D3D;
+    color: #4C3D3D;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 20px;
+   
+    box-shadow: 10px 10px 5px grey
+    
+    
+}
+
+.card:hover{
+    background:#F5EFE7 ;
+}
+.card h3{
+    font-size:1.4rem;
+    padding:1rem;
+    
+}
+.card p{
+    padding:10px 0;
+}
+.bar{
+    border-bottom: 3px solid #4C3D3D;
+    width: 30%;
+    margin: 1.5rem auto;
+    display: block;
+}
+.btc{
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+@media screen and (max-width:640px) {
+    .skills{
+        width: 100%;
+        padding: 2rem 1rem;
+        background:#f9f5e7;
+    }
+    .card-container{
+        padding-left: 1rem;
+        max-width: 100%;
+        margin:auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+        
+    }
+    .card h3{
+        font-size:1rem;
+        padding:1rem;
+        
+    }
+    .card p{
+        padding:10px 0;
+}
+.btc{
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding: 1rem 0;
+}
+}
